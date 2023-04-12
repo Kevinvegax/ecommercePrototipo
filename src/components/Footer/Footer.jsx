@@ -4,53 +4,47 @@ import "./Footer.scss";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="top">
-        <div className="item">
-          <h1>Categories</h1>
-          <span>Women</span>
-          <span>Men</span>
-          <span>Shoes</span>
-          <span>Accessories</span>
-          <span>New Arrivals</span>
-        </div>
-        <div className="item">
-          <h1>Links</h1>
-          <span>FAQ</span>
-          <span>Pages</span>
-          <span>Stores</span>
-          <span>Compare</span>
-          <span>Cookies</span>
-        </div>
-        <div className="item">
-          <h1>About</h1>
-          <span>
-            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
-            amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
-            ut labore etdolore.
-          </span>
-        </div>
-        <div className="item">
-          <h1>Contact</h1>
-          <span>
-            Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit
-            amet conse ctetur adipisicing elit, seddo eiusmod tempor incididunt
-            ut labore etdolore.
-          </span>
-        </div>
-      </div>
-      <div className="bottom">
-        <div className="left">
-          <span className="logo">Lamastore</span>
-          <span className="copyright">
-            © Copyright 2023. All Rights Reserved
-          </span>
-        </div>
-        <div className="right">
-          <img src="/img/payment.png" alt="" />
-        </div>
-      </div>
+      <div className="container">
+  	 	<div className="row">
+  	 		<div className="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div className="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div className="footer-col">
+  	 			<h4>online shop</h4>
+  	 			<ul>
+  	 				<li><a href="#">watch</a></li>
+  	 				<li><a href="#">bag</a></li>
+  	 				<li><a href="#">shoes</a></li>
+  	 				<li><a href="#">dress</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div className="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div className="social-links">
+  	 				<a href="#"><i className="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i className="fab fa-twitter"></i></a>
+  	 				<a href="#"><i className="fab fa-instagram"></i></a>
+  	 				<a href="#"><i className="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
     </div>
   );
 };
