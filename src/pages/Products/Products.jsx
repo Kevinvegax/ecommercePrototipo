@@ -34,16 +34,17 @@ const Products = () => {
           {data?.map((item) => (
             <div className="inputItem" key={item.id}>
               <input
-                type="checkbox"
+                type="radio"
                 id={item.id}
                 value={item.id}
+                name="opciones"
                 onChange={handleChange}
               />
               <label htmlFor={item.id}>{item.attributes.title}</label>
             </div>
           ))}
         </div>
-        <div className="filterItem">
+        {/* <div className="filterItem">
           <h2>Filter by price</h2>
           <div className="inputItem">
             <span>0</span>
@@ -55,7 +56,7 @@ const Products = () => {
             />
             <span>{maxPrice}</span>
           </div>
-        </div>
+        </div> */}
         <div className="filterItem">
           <h2>Sort by</h2>
           <div className="inputItem">

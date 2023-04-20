@@ -3,13 +3,16 @@
   .left {
     flex: 1;
     height: 100%;
+    padding-left: 70px;
+    padding-top: 20px;
+    font-size: 15px;
 
     .filterItem{
       margin-bottom: 30px;
 
       h2{
-        font-weight: 400;
-        margin-bottom: 20px;
+        font-size: 15px;
+        margin-bottom: 10px;
       }
 
       .inputItem{

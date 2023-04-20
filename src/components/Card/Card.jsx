@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 
 const Card = ({ item }) => {
   console.log(item);
+  let price = item?.attributes.price;
+  let priceText = price.toString();
   return (
     <Link className="link" to={`/product/${item.id}`}>
       <div className="card">
@@ -27,7 +29,7 @@ const Card = ({ item }) => {
         <h2>{item?.attributes.title}</h2>
         <div className="prices">
           <h3>${item.oldPrice || item?.attributes.price + 20}</h3>
-          <h3>${item?.attributes.price + '.00'}</h3>
+          <h3>${ priceText.includes('.') ? priceText : priceText + '.00'}</h3>
         </div>
       </div>
     </Link>

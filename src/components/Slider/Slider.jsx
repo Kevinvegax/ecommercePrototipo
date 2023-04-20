@@ -5,20 +5,17 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 const Slider = () => {
 
   return (
-    <Carousel>
+    <Carousel autoPlay={true} infiniteLoop={true} showStatus={false} showThumbs={false}>
                 <div>
-                    <img src={"img/slider1.jpg"} />
-                    <p className="legend">Legend 1</p>
+                    <img src={"img/slider1.jpg"} alt="" />
                 </div>
                 <div>
-                <img src="img/slider1.jpg" />
-                    <p className="legend">Legend 2</p>
+                <img src="img/slider1.jpg" alt=""/>
                 </div>
                 <div>
-                <img src="img/slider1.jpg" />
-                    <p className="legend">Legend 3</p>
+                <img src="img/slider1.jpg" alt=""/>
                 </div>
-            </Carousel>
+    </Carousel>
   );
 };
 
